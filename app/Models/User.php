@@ -43,19 +43,22 @@ class User extends Authenticatable
         'password' => 'hashed',
     ];
 
-    
+
     public function registrations()
     {
-        return $this->hasMany(Registration::class);
+        // TODO: Implement registrations() method.
+        // Figure out which method to use to correctly define the relationship
     }
 
     public function projects()
     {
-        return $this->belongsToMany(Project::class);
+        // TODO: Implement projects() method.
+        // Figure out which method to use to correctly define the relationship
     }
 
     public function clients()
     {
-        return $this->hasManyThrough(Client::class, Project::class);
+        // TODO: Implement clients() method.
+        // Figure out which method to use to correctly define the relationship   
     }
 }
